@@ -5,4 +5,7 @@
   <li><%= link_to 'Show', post %></td>
   <li><%= link_to 'Edit', edit_post_path(post) %></td>
   <li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <ul>
+    <%= render post.children %>
+  </ul>
 </ul>
