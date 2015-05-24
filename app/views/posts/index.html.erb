@@ -12,10 +12,7 @@
   </thead>
 
   <tbody>
-    <% @posts.each do |post| %>
-      <%#= render post %>
-      <%= render partial: 'post', locals: {post: post} %>
-    <% end %>
+    <%= render @posts %>
   </tbody>
 </table>
 
