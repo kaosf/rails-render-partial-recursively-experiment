@@ -1,7 +1,8 @@
-<tr>
-  <td><%= post.parent_id %></td>
-  <td><%= post.text %></td>
-  <td><%= link_to 'Show', post %></td>
-  <td><%= link_to 'Edit', edit_post_path(post) %></td>
-  <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</tr>
+<li>id: <%= post.id %></li>
+<ul>
+  <li>parent: <%= post.parent_id %></td>
+  <li>text: <%= post.text %></td>
+  <li><%= link_to 'Show', post %></td>
+  <li><%= link_to 'Edit', edit_post_path(post) %></td>
+  <li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</ul>
